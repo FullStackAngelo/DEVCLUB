@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: oswald, sans-serif;
+        }
+
+        main {
+            display: flex;
+            width: 100vw;
+        }
+
+
+        header {
+            position: absolute;
+            display: flex;
+            right: 0;
+            top: 0;
+            width: 30%;
+            height: 100vh;
+            background-color: #5d5d7d16 ;
+            justify-content: center;
+        }
+
+        header ul {
+            margin-top: 24px;
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        header ul a {
+            font-size: 28px;
+            text-decoration: none;
+            color: rgba(93, 93, 125, 1);
+            padding: 10px 20px;
+            font-weight: 400;
+        }
+        
+        main article {
+            margin-top: 216px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .text-decoration {
+            width: 30%;
+            margin-left: 136px;
+            text-align: justify;
+        }
+
+        .illustration-container {
+            margin: 0 13% 123px 0px;
+            z-index: 1;
+        }
+        
+        main p {
+            font-family: Oswald;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 48px;
+            letter-spacing: 0px;
+            color: rgba(93, 93, 125, 0.737);
+            margin: 15px 0;
+        }
+
+        main button {
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 0px;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 0px 10px 24px 0px rgba(148, 153, 234, 0.098);
+        background-color: rgba(148, 153, 234, 1);
+        width: 269px;
+        height: 62px;
+        }
+
+        h1 {
+            font-weight: 400;
+            font-size: 70px;
+            line-height: 80px;
+            letter-spacing: 0px;
+            color: #5D5D7D;       
+            margin-top: 70px;         
+        }
+
+
+        .illustration {
+            width: 455.9998474121094px;
+            height: 570px;
+            background-size: cover;
+        }
+
+        @media (max-width: 1270px) {
+            
+
+            h1 {
+                margin: auto;
+            }
+
+            header {
+                display: flex;     
+                width: 100%;     
+                height: auto;
+                align-items: center;
+                justify-content: center;
+             }
+
+            header ul {
+                margin: 0;
+            }
+
+            main article {
+                margin-top: 120px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text-decoration {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .illustration-container {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin: 80px auto 0 auto;
+                background-color: #5d5d7d6b;
+            }
+
+            .illustration {
+                width: 50%;
+                margin: 20px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .illustration {
+                width: 60%;
+                height: auto;
+            }
+        }
+
+    .hamburger {
+    display: none;
+    }
+
+    @media (max-width: 480px) {
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1100;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        width: 100%;
+        height: 4px;
+        background-color: #5D5D7D;
+    }
+
+    header {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100vh;
+        background-color: #ffffff;
+        padding: 20px;
+        z-index: 1000;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header.show-menu {
+        display: flex;
+    }
+
+    header ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header ul a {
+        padding: 12px 0;
+        font-size: 20px;
+    }
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container-hambuguer">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <header>
+        <ul>
+            <a href="">Home</a>
+            <a href="">Work</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </ul>
+        
+    </header>
+    <main>
+        <article>
+            <div class="text-decoration">
+                <h1>Easy Shopping <br> Via Mobile</h1>
+                <p>Shopping has never been easier with the advent of mobile technology. You can now browse, compare, and purchase products right from your smartphone or tablet.</p>
+                
+                <button>Get Starded</button>
+            </div>
+            <div class="illustration-container">
+                <img src="/assets/Illustration-3-3 (1).svg" alt="Easy Shopping Illustration" class="illustration">
+            </div>
+        </article>
+        
+    </main>
+    <script>
+  // Alterna a classe que mostra/esconde o menu
+  function toggleMenu() {
+    const header = document.querySelector('header');
+    header.classList.toggle('show-menu');
+  }
+
+  let lastScrollTop = 0;
+
+  window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Só faz isso no mobile (máx 480px)
+    if (window.innerWidth <= 480) {
+      if (scrollTop > lastScrollTop) {
+        // Rolando para baixo: esconde o menu
+        header.classList.remove('show-menu');
+      }
+    }
+
+    lastScrollTop = scrollTop;
+  });
+</script>
+
+</body>
+
+</html>
