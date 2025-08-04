@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins, sans-serif;
+            color: #17233D;
+            text-decoration: none;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        header {
+            margin: 47px 0 0 42px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+
+        header a {
+            text-decoration: none;
+            size: 14px;
+            font-weight: 400;
+            margin-left: 32px;
+
+        }
+
+        header a:after {
+            content: "";
+            display: block;
+            margin-left: 50%;
+            width: 0%;
+            height: 2px;
+            background-color: #6FBF44;
+            transition: 0.3s ease-in-out;
+        }
+
+        header a:hover:after {
+            margin-left: 0%;
+            width: 100%;
+            
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            height: 100%;
+            text-align: center;
+            align-items: center;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 163px;
+        }
+
+        .header-button {
+        font-weight: 500;
+        font-size: 16px;
+        background-color: #6FBF44;
+        border: none;
+        border-radius: 6px;
+        width: 124px;
+        height: 51px;
+        color: white;
+        margin-left: 32px;
+        }
+
+        .header-button:hover {
+            cursor: pointer;
+            background-color: #5a9e3b;
+            transition: 200ms ease-in-out;
+        }
+
+        .main-img {
+        width: 595px;
+        height: 500px;
+        margin-left: 200px;
+        }
+
+        h1 {
+        font-weight: 700;
+        font-size: 62px;
+        line-height: 82px;
+        letter-spacing: 0.6px;
+        }
+
+        .main-p {
+        width: 493;
+        height: 99;
+        }
+
+        .main-p::after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: #6FBF44;
+            margin-top: 10px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .main-p:hover::after {
+            width: 100%;
+
+        }
+
+        #learn-more {
+        color: #6FBF44;
+        font-weight: 500;
+        font-size: 18px;
+        }
+
+        #learn-more:hover {
+        color: #5a9e3b;
+        transition: 200ms ease-in-out;
+        }
+
+        .main-text {
+            width: 582px;
+            margin-right: 300px;
+        }
+
+        .main-text h1 {
+            margin-bottom: 42px;
+        }
+
+        .main-text p {
+            margin-bottom: 55px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <a href="">Products</a>
+            <a href="">Company</a>
+            <a href="">Blog</a>
+            <a href="">Log In</a>
+        </ul>
+        <button class="header-button">Sign Up</button>
+    </header>
+    <main>
+        <div>
+            <img src="/assets/(Positive) Congratulation You get 40 point for your ride.png" alt="main-img" class="main-img">
+        </div>
+        <article>
+            <div class="main-text">
+                <h1>Wide coverage location</h1>
+
+                <p class="main-p">Shared rides, There’s lots to do in your city, and we’ve got the rides to help you enjoy it all. And they’re all available right from your app.</p>
+
+                <a href="" id="learn-more">
+                    Learn More
+                </a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
